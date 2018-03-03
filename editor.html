@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>contentEditable</title> 
+<link rel="stylesheet" href="quirksmode.css" type="text/css" />
+<link rel="stylesheet" href="blogs.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="contentEditable.js"></script>
+<script src="jquery-1.12.0.min.js" type="text/javascript"></script>
+
+<script type='text/javascript' src='include.js' ></script>
+<script type='text/javascript'> $Spelling.SpellCheckAsYouType('testElement')</script>
+
+<style>
+
+body {
+	margin-left: 0;
+}
+
+div#header {
+	top: 0;
+	position: absolute;
+	padding-left: 0;
+}
+
+span#cursor {
+	display: inline-block;
+	display: -moz-inline-box;
+	width: 2px;
+	background-color: #000000;
+}
+
+p {
+ font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 	
+}
+
+</style>
+		 
+<script type="text/javascript">
+
+		/*
+		$(function() {
+
+            $(this).bind("contextmenu", function(e) {
+
+                e.preventDefault();
+
+            });
+
+        });
+        */
+        
+</script>
+        	
+<script type="text/JavaScript"> 
+		/*
+		function killCopy (e) { 
+			return false 
+		} 
+		
+		function reEnable() { 
+			return true 
+		} 
+		
+		document.onselectstart = new Function ("return false"); 
+			if (window.sidebar) { 
+				document.onmousedown=killCopy; 
+				document.onclick=reEnable; 
+			} 
+		*/
+		
+		/*
+		function stop_copy() {
+			alert("Allah Akbar");
+			
+			$('#testElement').bind("cut copy paste",function(e) {
+			  		e.preventDefault();
+			  		alert("it is woeing 2");
+			});
+			
+		}
+		*/
+	
+	$(function () {
+            $('div').bind('paste', function () {
+                return false;
+            });
+
+            $('div').bind('cut', function () {
+                return false;
+            });
+
+            $('div').bind('copy', function () {
+                return false;
+            });
+    });
+		
+</script>        
+</head>
+<body>
+<div class="entry" id="testElement" contenteditable="true">
+</div>
+</body>
+</html>

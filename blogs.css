@@ -1,0 +1,380 @@
+
+/* BLOG STYLES */
+
+div.entry {
+	background-color: #e5ecf3;
+	padding: 5px 5px;
+	border: 1px dotted #b7c4d3;
+	border-width: 1px 0;
+	margin-bottom: -1px;
+}
+
+div.entry.odd {
+	background-color: #eef0eb;
+}
+
+div.entry pre {
+	margin: 0 -3px;
+	padding-left: 3px;
+}
+
+div.entryheader {
+	margin-left: 38px;
+	border-left: 1px solid #676462;
+	padding-left: 15px;
+}
+
+div.entryheader p,div.entryheader h4 {
+	margin: 5px 0;
+}
+
+div.entry a {
+	text-decoration: none;
+}
+
+div.entry p.dateline {
+	font-family: verdana,sans-serif;
+	font-size: 80%;
+	margin-bottom: 0;
+}
+
+div.entry h4 {
+	font-size: 100%;
+	margin: 0.05em 0;
+}
+
+p.continue {
+	margin-left: 38px;
+	text-align: right;
+	background: url(pix/continue_line.gif) repeat-x center left;
+}
+
+p.continue a {
+	background: url(pix/continue_arrow.gif) no-repeat center left;
+	padding-left: 1em;
+	padding-right: 10px;
+	background-color: #e5ecf3;
+	line-height: 90%;
+	border-bottom: none;
+}
+
+div.odd p.continue a {
+	background-color: #eef0eb;
+}
+
+div.floater a {
+	text-decoration: none;
+}
+
+div.floater li {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0.2em 1px;
+}
+
+div.floater li li {
+	padding-left: 0.5em;
+}
+
+ol.recentcomments li {
+	margin-top: 10px;
+}
+
+div.floater p {
+	border-top: 1px solid #A19D99;
+	padding-top: 1em;
+	margin-top: 1em;
+}
+
+div.floater > p:first-child {
+	border: none;
+	padding: 0;
+}
+
+div.floater div.lanyrd-splat p {
+	border: none;
+	padding: 0;
+}
+
+div.floater input,div.floater select {
+	width: 15em;
+	border: 1px solid #676462;
+	background-color: #ffffff;
+	margin-top: 0.5em;
+	color: #676462;
+}
+
+div.floater input[type=submit] {
+	border-style: dotted;
+}
+
+div.sidebar {
+	font-size: 90%;
+}
+
+div.comment {
+	background: #e5ecf3; /* url(pix/comments_bg.gif) repeat-y right top; */
+	border: 1px solid #ffffff;
+	border-width: 1px 0;
+	margin: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-left: -233px;
+	padding-left: 233px;
+	padding-right: 6px;
+/*	padding-right: 36px;
+	max-height: 25em;
+	overflow: auto; */
+	margin-right: -30px;
+}
+
+div.comment.odd {
+	background-color: #eef0eb;
+}
+
+div.comment a {
+	color: #ED9F00;
+	text-decoration: none;
+	display: -moz-inline-box;
+	display: inline-block;
+	max-width: 34em;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+div.comment p.smaller a {
+	width: auto;
+	display: inline;
+}
+
+div.comment a:hover {
+	border-color: #ED9F00;
+}
+
+/* div.comment a:visited {
+	background-image: url(pix/icon_visitedlink_intro.gif);
+} */
+
+
+div.comment.ppkPost {
+
+}
+
+div.ppkPost p.smaller {
+	background: url(pix/comments_ppklogo.gif) no-repeat;
+	margin-left: -58px;
+	padding-left: 58px;
+}
+
+span.commentNumber {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 220%;
+	margin-right: 0.5em;
+}
+
+form.comment {
+	background-color: #EEF0F5;
+	margin-top: 10px;
+	padding: 1px 0.5em;
+	padding-bottom: 1px;
+	margin-left: -233px;
+	padding-left: 233px;
+}
+
+form.comment input {
+	width: 20em;
+	border: 1px solid #676462;
+	background-color: #EEF0F5;
+	margin: 0;
+}
+
+form.comment input[type=hidden] {
+	display: none;		 /* defeat Moz overstrictness in applying previous display: block */
+}
+
+form.comment textarea {
+	width: 20em;
+	height: 15em;
+	border: 1px solid #676462;
+	background-color: #EEF0F5;
+	margin: 0;
+	padding: 0;
+}
+
+form.comment input.checkbox {
+	width: auto;
+}
+
+form.comment label {
+	float: left;
+	margin: 0;
+	margin-right: 2em;
+	width: 10em;
+	text-align: right;
+	margin-left: -12em;
+}
+
+form.comment input:focus,form.comment textarea:focus {
+	background-color: #ffffff;
+}
+
+div.counter {
+	font-size: 90%;
+}
+
+span.toomuch {
+	font-weight: 600;
+	color: #cc0000;
+}
+
+ul.linkbait {
+	border: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul.linkbait > li {
+	padding: 15px 4px;
+	margin-left: 0;
+	list-style-position: inside;
+	border-top: 1px dotted #9198C1;
+}
+
+ul.linkbait > li:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+ul.linkbait > li:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.linkbait a.permaLinkbait {
+	color: grey;
+	text-decoration: none;
+	border: none;
+	padding: 0 5px;
+}
+
+.linkbait a.permaLinkbait:hover {
+	color: inherit;
+}
+
+li.newSection {
+	margin-top: 40px;
+}
+
+table.browserStats {
+	border-collapse: collapse;
+	counter-increment: table;
+}
+
+table.browserStats td {
+	border: 1px solid;
+	padding: 5px;
+	text-align: center;
+	vertical-align: top;
+}
+
+table.browserStats.wide {
+	margin-right: -10em;
+}
+
+table.browserStats.extrawide {
+	margin-left: -160px;
+}
+
+table.browserStats caption {
+	border-bottom: 1px dotted;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+table.browserStats caption:before {
+	content: "Table " counter(table) ": "
+}
+
+table.browserStats th:not(:first-child) {
+	width: 5em;
+}
+
+table.browserStats td:first-child {
+	white-space: nowrap;
+}
+
+table.extrawide th {
+	width: 4em;
+}
+
+table.browserStats th.narrow {
+	font-weight: normal;
+	width: 2em;
+}
+
+table.browserStats th.remarks {
+	width: auto !important;
+}
+
+table.browserStats td.remarks {
+	text-align: left;
+}
+
+table.browserStats td.merged {
+	vertical-align: middle;
+}
+
+table.browserStats td:first-child {
+	text-align: left;
+}
+
+table.browserStats td.overrule {
+	text-align: center;
+}
+
+table.browserStats td.new,table.browserStats td.new + td {
+	background-color: #f0f0f0;
+}
+
+table.browserStats tr.separator td {
+	border-top-width: 3px;
+}
+
+table.browserStats tr.worldwide td {
+	color: black;
+	background-color: #eeeeee;
+}
+
+table.browserStats th.clickable {
+	cursor: pointer;
+}
+
+table.browserStats th.clicked {
+	color: white;
+	background-color: #424242;
+}
+
+tr.new td:first-child {
+	background-color: #424242;
+	border-color: #424242;
+	color: white;
+}
+
+table.folded caption {
+	float: left;
+}
+
+table.folded caption:before {
+	content: "Open table " counter(table) ": "
+}
+
+table.folded caption span.smaller {
+	display: none;
+}
+
+table.folded tr {
+	display: none;
+}
+

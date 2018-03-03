@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>contentEditable</title>
+<style>
+
+iframe {
+	width: 34%;
+	height: 400px;
+	float: left;
+}
+
+#writeroot {
+	border: 1px solid #000000;
+	margin-left: 1%;
+	width: 49%;
+	height: 400px;
+}
+
+span.separator {
+	font-size: 250%;
+	font-weight: bold;
+}
+
+</style>
+<script src="buttons.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<form id="testForm">
+	<!--
+	<input type="button" value="Cut" id="cut" />
+	<input type="button" value="Copy" id="copy" />
+	<input type="button" value="Paste" id="paste" />	
+	<span class="separator">|</span>
+	-->
+	<input type="button" value="Bold" id="bold" />
+	<input type="button" value="Italic" id="italic" />
+	<!--
+	<input type="button" value="Underline" id="underline" />	
+	<input type="button" value="&lt;s&gt;" id="strikethrough" />
+	<input type="button" value="&lt;a&gt;" id="createLink" cmdValue="promptUser" promptText="URL of link?" />
+	<input type="button" value="&lt;hr /&gt;" id="inserthorizontalrule" />
+	<input type="button" value="&lt;img /&gt;" id="insertimage" cmdValue="/pix/logo_ppk.gif" />
+	-->
+	<span class="separator">|</span>
+	<input type="button" value="Undo" id="undo" />
+	<input type="button" value="Redo" id="redo" />
+	<span class="separator">|</span>
+	<!-- <input type="button" value="bgcolor" id="backcolor" cmdValue="promptUser" promptText="color?" /> -->
+	<input type="button" value="fgcolor" id="forecolor" cmdValue="promptUser" promptText="color?" />
+	<!-- <input type="button" value="hilite" id="hilitecolor" cmdValue="promptUser" promptText="color?" /> -->
+	<span class="separator">|</span>
+	<input type="button" value="A+" id="increasefontsize" />
+	<input type="button" value="A-" id="decreasefontsize" />
+	<!--
+	<input type="button" value="font-family" id="fontname" cmdValue="promptUser" promptText="font name?" />
+	<input type="button" value="font-size" id="FontSize" cmdValue="promptUser" promptText="font size?" />	
+	<input type="button" value="&lt;sub&gt;" id="subscript" />
+	<input type="button" value="&lt;sup&gt;" id="superscript" />
+	<span class="separator">|</span>
+	text-align:
+	<input type="button" value="left" id="justifyleft" />
+	<input type="button" value="right" id="justifyright" />
+	<input type="button" value="center" id="justifycenter" />
+	<input type="button" value="justify" id="justifyfull" />
+	<span class="separator">|</span>
+	-->
+	<input type="button" value="heading" id="heading" cmdValue="promptUser" promptText="Please type H1 Or H2" />
+	<input type="button" value="&lt;ol&gt;" id="insertorderedlist" />
+	<input type="button" value="&lt;ul&gt;" id="insertunorderedlist" />
+	<input type="button" value="&lt;p&gt;" id="insertparagraph" />	
+	<!--
+	<input type="button" value="html" id="inserthtml" cmdValue="promptUser" promptText="Valid HTML snippet" />	
+	<span class="separator">|</span>	
+	<input type="button" value="formatblock" id="formatblock" cmdValue="promptUser" promptText="Which block? (Header or paragraph)" />
+	-->
+	
+	<!--
+	<input type="button" value="indent" id="indent" />
+	<input type="button" value="outdent" id="outdent" />
+	<span class="separator">|</span>
+	<input type="button" value="readonly" id="contentreadonly" />
+	<input type="button" value="del" id="delete" />
+	<input type="button" value="unlink" id="unlink" />
+	-->
+
+</form>
+
+<iframe id="test" src="testpage2.html" width="200"></iframe>
+
+<textarea id="writeroot"></textarea> 
+
+</body>
+</html>

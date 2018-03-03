@@ -1,0 +1,121 @@
+
+.button-wrap {
+  margin-right: 25px;
+}
+
+.rad-button {
+  white-space: nowrap;
+  top: 0px;
+  border-radius: 4px;
+  position: relative;
+  border: none;
+  background: none;
+  font-family: 'Open Sans', sans-serif;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1s all ease;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 0px 0px 0px #B8B8B8;
+}
+
+.small {
+  width: 80px !important;
+  height: 30px !important;
+}
+
+.small2 {
+  width: 80px !important;
+  height: 35px !important;
+  font-size: 20px;
+}
+
+.rad-button-long {
+  width: 400px;
+  height: 35px;
+  font-size: 20px;
+}
+
+.rad-button-editor {
+  width: 40%;
+  height: 35px;
+  font-size: 20px;
+}
+
+.rad-button.flat {
+  /* background: #639A97; */
+ 	background: #639A79
+}
+
+.rad-button.dark {
+  border-bottom: 1px solid #5e5e5e;
+  color: #f5f5f5;
+}
+.rad-button.dark.flat {
+  background: #a1a1a1; 
+	
+}
+.rad-button.dark.gradient {
+  background: #a1a1a1;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a1a1a1 0%, #848484 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1a1a1), color-stop(100%, #848484));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #a1a1a1 0%, #848484 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #a1a1a1 0%, #848484 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #a1a1a1 0%, #848484 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #a1a1a1 0%, #848484 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1a1a1', endColorstr='#848484', GradientType=0);
+  /* IE6-9 */
+}
+
+.rad-button:focus {
+  outline: 0;
+}
+
+/*
+.rad-button:hover {  
+  background-color: #497270;   
+  top: -2px;
+  height: 52px;
+  border-bottom: 4px solid #ccc;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+*/
+
+.rad-button:hover.static {
+  top: 0px;
+  height: 50px; 
+ 
+  
+}
+
+.rad-button-long:hover {
+  /* background-color: #A6C6C5; */
+  background: #639A79
+  top: -2px;
+  height: 35px;
+  border-bottom: 4px solid #ccc;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.rad-button:active {
+  top: 0px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background-color: #ededed;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.extended-button {
+	width: 220px;
+} 
+
