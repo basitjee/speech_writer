@@ -1,4 +1,5 @@
 <?php
+// git testing comment
 	if ($_REQUEST["error"] == 1) {
 		$error_display = "display: block;";
 	} else {
